@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanna Have Fun?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h3>Please select category/categories</h3>
+<form class="category">
+    <input type="checkbox" name="category" value="Programming"> Programming
+    <input type="checkbox" name="category" value="Miscellaneous"> Miscellaneous
+    <input type="checkbox" name="category" value="Dark"> Dark
+    <input type="checkbox" name="category" value="Pun"> Pun
+    <input type="checkbox" name="category" value="Spooky"> Spooky
+    <input type="checkbox" name="category" value="Christmas"> Christmas
+</form>   
+
+<h3>Please Select the Type</h3>
+<form class="parts">
+    <input type="checkbox" class="singleType" name="parts" value="single"> Single
+    <input type="checkbox" class="twoPart" name="parts" value="twopart"> Two Part
+    
+</form>  
+    <h3>Please select the blacklist you want to add</h3>
+<form class="blacklist">
+    <input type="checkbox" name="blacklist" value="nsfw"> nswf
+    <input type="checkbox" name="blacklist" value="religious"> religious
+    <input type="checkbox" name="blacklist" value="political"> political
+    <input type="checkbox" name="blacklist" value="racist"> racist
+    <input type="checkbox" name="blacklist" value="sexist"> sexist
+    <input type="checkbox" name="blacklist" value="explicit"> explicit
+</form>  
+<br> 
+<form class="info"> 
+    <p>
+        Word: <input id="query" placeholder = "Search String"></input>
+        <!-- <button id="addString" placeholder="Add a Search Word"></button> -->
+        
+        Number: <input type="number" id="amount" value = "10"></input>
+        <!-- <button id="addAmount">Number of Jokes</button> -->
+        
+        Language: <input id="language" placeholder='de,cs,es,fr,pt'></input>
+        <!-- <button id="selectLanguage">Select Language</button> -->
+        
+    </p>
+    
+</form>  
+<br>
+
+
+    <button id="btn">Generate Jokes</button>
+    <button type="button" id="reload" onClick="window.location.reload();">Start New Search</button>
+    
+    <br>
+    <br>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

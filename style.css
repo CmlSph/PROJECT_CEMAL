@@ -1,0 +1,106 @@
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(231, 236, 238);
+  }
+  
+  input{
+    width:10%;
+  }
+ h3{
+   text-align: center;
+   color: blue;
+ }
+  
+  .category{
+    border:3px solid rgb(139, 138, 138);
+    display:flex;
+    align-items:stretch;             
+    padding-right:40px;
+}
+.blacklist{
+  border:3px solid rgb(139, 138, 138);
+}
+.parts{
+  border:3px solid rgb(139, 138, 138);
+  
+}
+.info{
+  border:3px solid rgb(139, 138, 138);
+  display:flex;
+  align-items:stretch;
+  justify-content: center;
+  padding-left:10px;
+  
+}
+#query, #amount, #language{
+  width:100px;
+}
+.buttons{
+  border: 3px solid pink;
+  display:flex;
+  align-items:stretch; 
+  justify-content: center;
+}
+
+.controlButtons{
+  display:flex;
+  justify-content:center;
+  background-color:none;
+}
+
+#btn{
+background-color:rgb(12, 1, 37);
+text-align:center;
+height:8vh;
+color:white;
+font-weight:bold;
+width:49%;
+}
+.container{
+    border:3px solid red;
+  }
+
+#reload{
+  background-color:rgb(12, 1, 37);
+  height:8vh;
+  color:white;
+  font-weight:bold;
+  text-align:center;
+  width:50%;
+  
+}
+  #buttonAccordion {
+    background-color: rgb(12, 3, 59);
+    color: rgb(240, 237, 237);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active {
+    background-color: #ccc;
+  }
+  
+  #buttonAccordion:hover {
+    background-color: rgb(170, 167, 167);
+  }
+  
+  div {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .hide{
+      display:none;
+  }
+
+ 
