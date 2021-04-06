@@ -2,96 +2,68 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background-color:rgb(231, 236, 238);
+  background-color: rgb(231, 236, 238);
 }
 
-input{
-  width:10%;
+input {
+  width: 10%;
 }
-h1{
+h1 {
   text-align: center;
   color: rgb(233, 14, 14);
-} 
-h3{
- text-align: center;
- color: rgb(49, 5, 151);
+}
+h3 {
+  text-align: center;
+  color: rgb(49, 5, 151);
 }
 
-.category{
-  border:3px solid rgb(12, 1, 37);
-  
-}  
-.category input{
-  border:3px solid red;
-  background-color:green;
+.category,
+.blacklist,
+.parts {
+  border: 3px solid rgb(12, 1, 37);
 }
 
-
-.blacklist{
-border:3px solid rgb(12, 1, 37);
-
+.info {
+  border: 3px solid rgb(12, 1, 37);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding-left: 10px;
 }
-.parts{
-border:3px solid rgb(12, 1, 37);
-
+#query,
+#amount,
+#language {
+  width: 100px;
 }
-.info{
-border:3px solid rgb(12, 1, 37);
-display:flex;
-align-items:stretch;
-justify-content: center;
-padding-left:10px;
-
-}
-#query, #amount, #language{
-width:100px;
-}
-.buttons{
-border: 3px solid pink;
-display:flex;
-align-items:stretch; 
-justify-content: center;
+.buttons {
+  border: 3px solid pink;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
 
-.controlButton{
-display:flex;
-justify-content:center;
-background-color:none;
+.controlButton {
+  display: flex;
+  justify-content: center;
+  background-color: none;
 }
 
-#btn{
-background-color:rgb(12, 1, 37);
-text-align:center;
-font-size: 30px;
-height:10vh;
-color:white;
-font-weight:bold;
-width:49%;
+#btn {
+  background-color: rgb(12, 1, 37);
+  text-align: center;
+  font-size: 30px;
+  height: 10vh;
+  color: white;
+  font-weight: bold;
+  width: 49%;
 }
-#responseMessage{
-color : white;
-font-weight : bold;
-font-size : 30px;
-font-family : arial;
-background-color : blue;
-text-align : center;
-}
-#warningMessage{
-color : yellow;
-font-weight : bold;
-background-color : red;
-width : 49%;
-font-family : arial;
-text-align : center;
-}
-#reload{
-background-color:rgb(12, 1, 37);
-height:8vh;
-color:white;
-font-weight:bold;
-text-align:center;
-width:50%;
-
+#responseMessage {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: arial;
+  background-color: blue;
+  text-align: center;
 }
 #buttonAccordion {
   background-color: rgb(12, 3, 59);
@@ -121,7 +93,6 @@ div {
   overflow: hidden;
 }
 
-.hide{
-    display:none;
+.hide {
+  display: none;
 }
-

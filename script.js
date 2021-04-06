@@ -72,20 +72,10 @@ function generateURL() {
 
   return url;
 }
-const container = document.createElement("main");
-document.body.appendChild(container);
-const responseMessageContainer = document.createElement("main");
-document.body.appendChild(responseMessageContainer);
 
-function fetchData() {
+function fetchData(container, responseMessageContainer) {
   container.innerHTML = "";
   responseMessageContainer.innerHTML = "";
-
-  const selected = checkIfACategoryIsSelected();
-
-  if (!selected) {
-    return;
-  }
 
   const url = generateURL();
 
@@ -110,8 +100,7 @@ function fetchData() {
         container.appendChild(containerParaAnswer);
 
         jokesButton.innerText =
-          jsonData.jokes[i].setup ||
-          jsonData.jokes[i].joke + " " + "(" + jsonData.jokes[i].category + ")";
+          jsonData.jokes[i].setup || jsonData.jokes[i].joke;
         jokesButton.id = "buttonAccordion";
 
         paraAnswer.innerText =
@@ -135,8 +124,17 @@ function fetchData() {
 }
 
 function main() {
+  const container = document.createElement("main");
+  document.body.appendChild(container);
+  const responseMessageContainer = document.createElement("section");
+  document.body.appendChild(responseMessageContainer);
   const buttonGenerateJokes = document.querySelector("#btn");
-  buttonGenerateJokes.addEventListener("click", fetchData);
+  buttonGenerateJokes.addEventListener("click", () => {
+    const selected = checkIfACategoryIsSelected();
+    if (selected) {
+      fetchData(container, responseMessageContainer);
+    }
+  });
 }
 
-window.onload = main();
+main();
